@@ -1,0 +1,324 @@
+/* Reset some default styles */
+body, h1, div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #eaffdb, #20440f);  /*พื้นหหลัง
+}
+
+/* Container styling */
+.container {
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 90%;
+}
+
+/* Title styling */
+.container h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Visitor count styling */
+.visitor-count {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Visitor count number styling */
+.visitor-count span {
+    font-weight: bold;
+    color: #ff7e5f;
+    margin-left: 5px;
+}
+
+/* Image styling */
+.photo img {
+    max-width: 100%; /* รูปจะไม่เกินขนาดของพื้นที่ตรงกับรูปก่อนเริ่มขยาย */
+    height: auto; /* สั่งให้สูงของรูปพร้อมกับเท่ากับอัตราส่วนของภาพ */
+    border-radius: 10px;
+}
+
+.mySlides {
+    display: none;
+    width: 100%;
+    text-align: center;
+}
+
+.slideshow-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Previous & Next buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+    width: 100%;
+    text-align: center;
+}
+
+.slideshow-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Previous & Next buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Fade animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 10.0s; /* ปรับค่านี้ให้มากขึ้นเพื่อทำให้สไลด์ช้าลง */
+}
+
+.visitor-count {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute; /* เปลี่ยนเป็น absolute */
+    top: 50px; /* ปรับตำแหน่งด้านบนของหน้าเว็บ */
+    right: 50px; /* ปรับตำแหน่งด้านขวาของหน้าเว็บ */
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    text-align: center;
+}
+
+.popup-content {
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+
+button {
+    margin-top: 10px;
+    padding: 13px 16px;
+    border: none;
+    background-color: #2c632f;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4c5f1e;
+}
+
+/* CSS styles for the popup */
+.popup {
+    display: none;
+    position: fixed;
+    top: 30%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 300px;
+    padding: 20px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.popup-content {
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* ปุ่มทั่วไป */
+button {
+    margin-top: 10px;
+    padding: 13px 16px;
+    border: none;
+    background-color: #599b4c;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* ปุ่มสำหรับเปิด popup */
+#openPopupBtn {
+    position: absolute; /* ใช้ตำแหน่งแบบ absolute */
+    top: 200px; /* ปรับตำแหน่งตามต้องการ */
+    left: 1300px; /* ปรับตำแหน่งตามต้องการ */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.logo-container {
+    position: relative; /* กำหนดให้เป็นตำแหน่งแบบเก็บตำแหน่ง */
+    width: 100%; /* ปรับความกว้างเพื่อให้ขนาดของโลโก้ถูกต้อง */
+    height: 300px; /* กำหนดความสูงตามต้องการ */
+}
+
+#logo {
+    width: 200px; /* ปรับขนาดโลโก้ตามต้องการ */
+    height: auto;
+    transition: transform 0.3s ease;
+    position: absolute; /* กำหนดให้โลโก้เป็นตำแหน่งแบบเดี่ยว (absolute) ซึ่งจะอ้างอิงตำแหน่งตามคอนเทนเนอร์แม่ (relative) */
+    top: 5px; /* ปรับตำแหน่งตามต้องการ */
+    left: 1250px; /* ปรับตำแหน่งตามต้องการ */
+}
+
+#logo:hover {
+    transform: scale(1.1); /* ขยายขนาดโลโก้เมื่อผู้ใช้นำเม้าส์มาชี้ */
+}
+
+/* ปุ่มทั่วไป */
+button {
+    margin-top: 10px;
+    padding: 13px 16px;
+    border: none;
+    background-color: #599b4c;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* เพิ่ม transition เพื่อให้เคลื่อนไหวอย่างนุ่มนวล */
+}
+
+/* ปุ่มทั่วไปเมื่อโฮเวอร์ */
+button:hover {
+    transform: translateY(-5px); /* ขยับปุ่มขึ้นไป 5px เมื่อโฮเวอร์ */
+}
+
+/* ปุ่มสำหรับเปิด popup */
+#openPopupBtn {
+    position: absolute; /* ใช้ตำแหน่งแบบ absolute */
+    top: 200px; /* ปรับตำแหน่งตามต้องการ */
+    left: 1300px; /* ปรับตำแหน่งตามต้องการ */
+    transition: transform 0.3s ease; /* เพิ่ม transition เพื่อให้เคลื่อนไหวอย่างนุ่มนวล */
+}
+
+/* ปุ่มสำหรับเปิด popup เมื่อโฮเวอร์ */
+#openPopupBtn:hover {
+    transform: translateY(-5px); /* ขยับปุ่มขึ้นไป 5px เมื่อโฮเวอร์ */
+}
+/* ปุ่ม Previous และ Next */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    user-select: none;
+    background-color: rgba(0,0,0,0.5); /* เพิ่มพื้นหลังโปร่งใสเพื่อให้มองเห็นชัดขึ้น */
+    border-radius: 20px;
+}
+
+/* วางปุ่มด้านล่างของสไลด์ */
+.prev {
+    bottom: 467px; /* ย้ายปุ่มลงด้านล่าง */
+    left:   550px;   /* ปรับให้ปุ่มอยู่ทางซ้าย */
+}
+
+.next {
+    bottom: 467px; /* ย้ายปุ่มลงด้านล่าง */
+    right: 550px;  /* ปรับให้ปุ่มอยู่ทางขวา */
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8); /* เปลี่ยนพื้นหลังเมื่อโฮเวอร์ */
+}
+
+}
