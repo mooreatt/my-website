@@ -325,7 +325,7 @@ button:hover {
     #logo {
         width: 70px;
         top: 15px;
-        left: 22%;  /* โลโก้จะอยู่ตรงกลางของหน้าจอ */
+        left: 100%;  /* โลโก้จะอยู่ตรงกลางของหน้าจอ */
         transform: translateX(-5%);
     }
 
