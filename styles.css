@@ -344,7 +344,7 @@ button:hover {
     /* ปรับขนาดรูปในสไลด์โชว์ให้เหมาะกับหน้าจอเล็ก */
     .slideshow-container img {
         width: 100%;
-        height: auto;
+        height: 100px;
     }
 
     /* ปรับขนาดของปุ่ม next และ prev ให้เล็กลง */
