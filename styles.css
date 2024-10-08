@@ -324,6 +324,7 @@ button:hover {
     /* ปรับตำแหน่งและขนาดของโลโก้มือถือ */
     #logo {
         width: 95px;
+        top: auto;
         left: 13px;  /* โลโก้จะอยู่ตรงกลางของหน้าจอ */
         transform: translateX(-5%);
     }
