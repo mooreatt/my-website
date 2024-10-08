@@ -344,7 +344,7 @@ button:hover {
     /* ปรับขนาดรูปในสไลด์โชว์ให้เหมาะกับหน้าจอเล็ก */
     .slideshow-container img {
         width: 100%;
-        height: 100px;
+        height: auto;
     }
 
     /* ปรับขนาดของปุ่ม next และ prev ให้เล็กลง */
@@ -356,8 +356,8 @@ button:hover {
 @media (max-width: 768px) {
     /* ปรับ popup ให้เล็กลงเมื่ออยู่ในหน้าจอมือถือ */
     .popup {
-        width: 80%;  /* ลดความกว้างของ popup */
-        left: 10%;   /* ให้ popup อยู่ตรงกลาง */
+        width: auto;  /* ลดความกว้างของ popup */
+        left: auto;   /* ให้ popup อยู่ตรงกลาง */
         padding: 15px; /* ลด padding ของ popup */
     }
 
