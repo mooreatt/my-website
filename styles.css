@@ -293,32 +293,52 @@ button:hover {
 #openPopupBtn:hover {
     transform: translateY(-5px); /* ขยับปุ่มขึ้นไป 5px เมื่อโฮเวอร์ */
 }
-/* ปุ่ม Previous และ Next */
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    padding: 10px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    user-select: none;
-    background-color: rgba(0,0,0,0.5); /* เพิ่มพื้นหลังโปร่งใสเพื่อให้มองเห็นชัดขึ้น */
-    border-radius: 20px;
-}
+/* Styles for small screens (up to 768px wide) */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column; /* เรียงแนวตั้งสำหรับหน้าจอเล็ก */
+        padding: 10px;
+    }
 
-/* วางปุ่มด้านล่างของสไลด์ */
-.prev {
-    bottom: 467px; /* ย้ายปุ่มลงด้านล่าง */
-    left:   550px;   /* ปรับให้ปุ่มอยู่ทางซ้าย */
-}
+    .container {
+        max-width: 100%;
+        padding: 20px;
+    }
 
-.next {
-    bottom: 467px; /* ย้ายปุ่มลงด้านล่าง */
-    right: 550px;  /* ปรับให้ปุ่มอยู่ทางขวา */
-}
+    h1 {
+        font-size: 1.8em;
+    }
 
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8); /* เปลี่ยนพื้นหลังเมื่อโฮเวอร์ */
+    /* ลดขนาดปุ่มสำหรับมือถือ */
+    button {
+        padding: 10px 12px;
+        font-size: 1em;
+    }
+
+    .slideshow-container img {
+        max-width: 100%; /* รูปภาพจะปรับขนาดตามหน้าจอ */
+        height: auto;
+    }
+
+    /* ปรับตำแหน่งและขนาดของโลโก้ */
+    #logo {
+        width: 150px;
+        left: 50%;  /* โลโก้จะอยู่ตรงกลางของหน้าจอ */
+        transform: translateX(-50%);
+    }
+
+    /* Popup ปรับให้เหมาะกับมือถือ */
+    .popup {
+        width: 80%;
+        left: 10%;  /* ให้อยู่ตรงกลางหน้าจอ */
+        padding: 15px;
+    }
+
+    .visitor-count {
+        right: 10px;
+        top: 10px;
+        font-size: 1em;
+    }
 }
 
 }
