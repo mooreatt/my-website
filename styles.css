@@ -293,6 +293,7 @@ button:hover {
 #openPopupBtn:hover {
     transform: translateY(-5px); /* ขยับปุ่มขึ้นไป 5px เมื่อโฮเวอร์ */
 }
+
 /* Styles for small screens (up to 768px wide) */
 @media (max-width: 768px) {
     body {
@@ -323,8 +324,8 @@ button:hover {
     /* ปรับตำแหน่งและขนาดของโลโก้มือถือ */
     #logo {
         width: 150px;
-        left: 20%;  /* โลโก้จะอยู่ตรงกลางของหน้าจอ */
-        top: 10%;
+        left: 15%;  /* โลโก้จะอยู่ตรงกลางของหน้าจอ */
+        top: 20%;
         transform: translateX(-5%);
     }
 
@@ -415,7 +416,7 @@ button:hover {
     #openPopupBtn {
         top: 30px;
         left: 25%;
-        transform: translateX(-20%);
+        transform: translateX(-10%);
     }
 
     .close {
