@@ -320,11 +320,11 @@ button:hover {
         height: auto;
     }
 
-    /* ปรับตำแหน่งและขนาดของโลโก้ */
+    /* ปรับตำแหน่งและขนาดของโลโก้มือถือ */
     #logo {
         width: 150px;
         left: 20%;  /* โลโก้จะอยู่ตรงกลางของหน้าจอ */
-        transform: translateX(-50%);
+        transform: translateX(-5%);
     }
 
     /* Popup ปรับให้เหมาะกับมือถือ */
@@ -347,11 +347,7 @@ button:hover {
         height: auto;
     }
 
-    /* ปรับขนาดของปุ่ม next และ prev ให้เล็กลง */
-    .prev, .next {
-        font-size: 12px;
-        padding: 10px;
-    }
+
 }
 @media (max-width: 768px) {
     /* ปรับ popup ให้เล็กลงเมื่ออยู่ในหน้าจอมือถือ */
@@ -400,7 +396,7 @@ button:hover {
     cursor: pointer;
 }
 
-/* ปุ่มสำหรับเปิด popup */
+/* ปุ่มสำหรับเปิด popup window*/ 
 #openPopupBtn {
     position: absolute;
     top: 190px;
