@@ -323,7 +323,7 @@ button:hover {
     /* ปรับตำแหน่งและขนาดของโลโก้ */
     #logo {
         width: 150px;
-        left: 50%;  /* โลโก้จะอยู่ตรงกลางของหน้าจอ */
+        left: 20%;  /* โลโก้จะอยู่ตรงกลางของหน้าจอ */
         transform: translateX(-50%);
     }
 
@@ -417,7 +417,7 @@ button:hover {
 
     #openPopupBtn {
         top: 50px;
-        left: 50%;
+        left: 25%;
         transform: translateX(-50%);
     }
 
