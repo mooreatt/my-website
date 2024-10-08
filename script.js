@@ -15,15 +15,13 @@ document.addEventListener('DOMContentLoaded', function() {
         popup.style.display = 'none'; // ซ่อนป๊อปอัพเมื่อคลิก
     });
 
-    // ฟังก์ชันขยายและย่อโลโก้
-    const logoContainer = document.getElementById('logoContainer');
-    logoContainer.addEventListener('mouseenter', function() {
-        const logo = document.getElementById('logo');
-        logo.style.transform = 'scale(1.1)';
+    // ฟังก์ชันขยายและย่อโลโก้ โดยอ้างอิงถึง logo ตรงๆ
+    const logo = document.getElementById('logo');
+    logo.addEventListener('mouseenter', function() {
+        logo.style.transform = 'scale(1.1)'; // ขยายโลโก้เมื่อเมาส์ชี้
     });
-    logoContainer.addEventListener('mouseleave', function() {
-        const logo = document.getElementById('logo');
-        logo.style.transform = 'scale(1)';
+    logo.addEventListener('mouseleave', function() {
+        logo.style.transform = 'scale(1)'; // ย่อโลโก้กลับเมื่อเมาส์ออก
     });
 });
 
