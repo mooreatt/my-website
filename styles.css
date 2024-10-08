@@ -323,8 +323,8 @@ button:hover {
 
     /* ปรับตำแหน่งและขนาดของโลโก้มือถือ */
     #logo {
-        width: 150px;
-        left: 15px;  /* โลโก้จะอยู่ตรงกลางของหน้าจอ */
+        width: 95px;
+        left: 13px;  /* โลโก้จะอยู่ตรงกลางของหน้าจอ */
         transform: translateX(-5%);
     }
 
@@ -400,7 +400,7 @@ button:hover {
 /* ปุ่มสำหรับเปิด popup window*/ 
 #openPopupBtn {
     position: absolute;
-    top: 190px;
+    top: 100px;
     left: 67%;
     transform: translateX(-5%);
 }
