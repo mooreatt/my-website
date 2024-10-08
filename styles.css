@@ -356,8 +356,8 @@ button:hover {
 @media (max-width: 768px) {
     /* ปรับ popup ให้เล็กลงเมื่ออยู่ในหน้าจอมือถือ */
     .popup {
-        width: auto;  /* ลดความกว้างของ popup */
-        left: auto;   /* ให้ popup อยู่ตรงกลาง */
+        width: 80%;  /* ลดความกว้างของ popup */
+        left: 10%;   /* ให้ popup อยู่ตรงกลาง */
         padding: 15px; /* ลด padding ของ popup */
     }
 
