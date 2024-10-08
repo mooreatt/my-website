@@ -388,7 +388,7 @@ button:hover {
 /* เมื่อ popup ถูกแสดง ให้เพิ่ม class .show เพื่อทำให้แสดงพร้อมแอนิเมชัน */
 .popup.show {
     display: block;
-    opacity: 1;
+    opacity: 10;
 }
 
 /* ปุ่มปิด popup */
@@ -403,9 +403,9 @@ button:hover {
 /* ปุ่มสำหรับเปิด popup */
 #openPopupBtn {
     position: absolute;
-    top: 80px;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 90px;
+    left: 60%;
+    transform: translateX(-5%);
 }
 
 /* ปรับแต่ง popup สำหรับหน้าจอเล็ก */
