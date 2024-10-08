@@ -2,17 +2,17 @@ document.addEventListener('DOMContentLoaded', function() {
     // เรียกใช้ฟังก์ชันแสดงสไลด์อัตโนมัติเมื่อหน้าโหลดเสร็จ
     autoShowSlides();
 
-    // ฟังก์ชันเปิดป๊อปอัพ
+    // ฟังก์ชันเปิดป๊อปอัพ พร้อมแอนิเมชัน
     const openPopupBtn = document.getElementById('openPopupBtn');
     const popup = document.getElementById('popup');
     openPopupBtn.addEventListener('click', function() {
-        popup.style.display = 'block'; // แสดงป๊อปอัพเมื่อคลิก
+        popup.classList.add('show'); // แสดง popup พร้อมแอนิเมชัน
     });
 
-    // ฟังก์ชันปิดป๊อปอัพ
+    // ฟังก์ชันปิดป๊อปอัพ พร้อมแอนิเมชัน
     const closePopupBtn = document.getElementById('closePopupBtn');
     closePopupBtn.addEventListener('click', function() {
-        popup.style.display = 'none'; // ซ่อนป๊อปอัพเมื่อคลิก
+        popup.classList.remove('show'); // ซ่อน popup พร้อมแอนิเมชัน
     });
 
     // ฟังก์ชันขยายและย่อโลโก้ โดยอ้างอิงถึง logo ตรงๆ

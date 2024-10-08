@@ -357,11 +357,70 @@ button:hover {
     /* ปรับ popup ให้เล็กลงเมื่ออยู่ในหน้าจอมือถือ */
     .popup {
         width: 80%;  /* ลดความกว้างของ popup */
-        left: 10%;   /* ให้ popup อยู่ตรงกลาง */
+        left: 5000%;   /* ให้ popup อยู่ตรงกลาง */
         padding: 15px; /* ลด padding ของ popup */
     }
 
     /* ปรับขนาดปุ่มปิด */
+    .close {
+        font-size: 18px;
+        top: 5px;
+        right: 10px;
+    }
+}
+/* Popup styling */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%; /* ให้อยู่กลางจอ */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 300px;
+    padding: 20px;
+    border-radius: 5px;
+    color: #fff;
+    opacity: 0;  /* เริ่มจากการซ่อน */
+    transition: opacity 0.5s ease; /* เพิ่มแอนิเมชันสำหรับการแสดงผล */
+}
+
+/* เมื่อ popup ถูกแสดง ให้เพิ่ม class .show เพื่อทำให้แสดงพร้อมแอนิเมชัน */
+.popup.show {
+    display: block;
+    opacity: 1;
+}
+
+/* ปุ่มปิด popup */
+.close {
+    font-size: 20px;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+
+/* ปุ่มสำหรับเปิด popup */
+#openPopupBtn {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* ปรับแต่ง popup สำหรับหน้าจอเล็ก */
+@media (max-width: 768px) {
+    .popup {
+        width: 80%;
+        padding: 15px;
+    }
+
+    #openPopupBtn {
+        top: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
     .close {
         font-size: 18px;
         top: 5px;
