@@ -472,7 +472,7 @@ button:hover {
     }
 
     #openPopupBtn {
-        top: 25px;
+        top: 15px;
         left: 50px; /* ปรับขนาดและตำแหน่งปุ่ม */
         transform: translateX(-10%);
     }
