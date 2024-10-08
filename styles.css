@@ -340,5 +340,33 @@ button:hover {
         font-size: 1em;
     }
 }
+@media (max-width: 768px) {
+    /* ปรับขนาดรูปในสไลด์โชว์ให้เหมาะกับหน้าจอเล็ก */
+    .slideshow-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* ปรับขนาดของปุ่ม next และ prev ให้เล็กลง */
+    .prev, .next {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
+@media (max-width: 768px) {
+    /* ปรับ popup ให้เล็กลงเมื่ออยู่ในหน้าจอมือถือ */
+    .popup {
+        width: 80%;  /* ลดความกว้างของ popup */
+        left: 10%;   /* ให้ popup อยู่ตรงกลาง */
+        padding: 15px; /* ลด padding ของ popup */
+    }
+
+    /* ปรับขนาดปุ่มปิด */
+    .close {
+        font-size: 18px;
+        top: 5px;
+        right: 10px;
+    }
+}
 
 }
