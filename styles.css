@@ -424,6 +424,66 @@ button:hover {
         top: 5px;
         right: 10px;
     }
+    /* Styles for small screens (up to 768px wide) */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column; /* เรียงแนวตั้งสำหรับหน้าจอเล็ก */
+        padding: 10px;
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    button {
+        padding: 10px 12px;
+        font-size: 1em;
+    }
+
+    .slideshow-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    #logo {
+        width: 95px;
+        top: 70px;
+        left: 13px;
+        transform: translateX(-5%);
+    }
+
+    .visitor-count {
+        right: 10px;
+        top: 10px;
+        font-size: 1em;
+    }
+}
+
+/* Media query for very small devices like phones */
+@media (max-width: 480px) {
+    .popup {
+        width: 80%;
+        padding: 15px;
+    }
+
+    #openPopupBtn {
+        top: 30px;
+        left: 50px; /* ปรับขนาดและตำแหน่งปุ่ม */
+        transform: translateX(-10%);
+    }
+
+    .close {
+        font-size: 18px;
+        top: 5px;
+        right: 10px;
+    }
+}
+
 }
 
 
