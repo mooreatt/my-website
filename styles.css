@@ -416,9 +416,9 @@ button:hover {
     }
 
     #openPopupBtn {
-        top: 50px;
+        top: 40px;
         left: 25%;
-        transform: translateX(-50%);
+        transform: translateX(-20%);
     }
 
     .close {
