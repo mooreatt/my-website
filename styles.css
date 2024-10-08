@@ -403,8 +403,8 @@ button:hover {
 /* ปุ่มสำหรับเปิด popup */
 #openPopupBtn {
     position: absolute;
-    top: 90px;
-    left: 60%;
+    top: 190px;
+    left: 67%;
     transform: translateX(-5%);
 }
 
