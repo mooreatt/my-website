@@ -343,6 +343,15 @@ button:hover {
     }
 }
 @media (max-width: 768px) {
+    /* ปรับขนาดรูปในสไลด์โชว์ให้เหมาะกับหน้าจอเล็ก */
+    .slideshow-container img {
+        width: 100%;
+        height: auto;
+    }
+
+
+}
+@media (max-width: 768px) {
     /* ปรับ popup ให้เล็กลงเมื่ออยู่ในหน้าจอมือถือ */
     .popup {
         width: 80%;  /* ลดความกว้างของ popup */
@@ -400,7 +409,7 @@ button:hover {
 /* ปรับแต่ง popup สำหรับหน้าจอเล็ก */
 @media (max-width: 768px) {
     .popup {
-        width: 50%;
+        width: 80%;
         padding: 15px;
     }
 
@@ -411,7 +420,7 @@ button:hover {
     }
 
     .close {
-        font-size: 17px;
+        font-size: 18px;
         top: 5px;
         right: 10px;
     }
