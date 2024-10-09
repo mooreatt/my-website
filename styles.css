@@ -307,7 +307,7 @@ button:hover {
     }
 
     h1 {
-        font-size: 2.8em;
+        font-size: 1.8em;
     }
 
     /* ลดขนาดปุ่มสำหรับมือถือ */
@@ -341,15 +341,6 @@ button:hover {
         top: 10px;
         font-size: 1em;
     }
-}
-@media (max-width: 768px) {
-    /* ปรับขนาดรูปในสไลด์โชว์ให้เหมาะกับหน้าจอเล็ก */
-    .slideshow-container img {
-        width: 100%;
-        height: auto;
-    }
-
-
 }
 @media (max-width: 768px) {
     /* ปรับ popup ให้เล็กลงเมื่ออยู่ในหน้าจอมือถือ */
@@ -409,7 +400,7 @@ button:hover {
 /* ปรับแต่ง popup สำหรับหน้าจอเล็ก */
 @media (max-width: 768px) {
     .popup {
-        width: 80%;
+        width: 50%;
         padding: 15px;
     }
 
@@ -420,7 +411,7 @@ button:hover {
     }
 
     .close {
-        font-size: 18px;
+        font-size: 17px;
         top: 5px;
         right: 10px;
     }
